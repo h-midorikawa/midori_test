@@ -1,6 +1,6 @@
 public class myClass {
 
-    private myClass instance_ ;
+    private myClass instance ;
 
     myClass(){
 
@@ -10,11 +10,11 @@ public class myClass {
 
     public static getInstance() {
 
-        if( instance_ == null ) {
-            instance_ = new myClass();
+        if( this.instance == null ) {
+            this.instance = new myClass();
         }
         
-        return instance_;
+        return this.instance;
     }
 }
 
